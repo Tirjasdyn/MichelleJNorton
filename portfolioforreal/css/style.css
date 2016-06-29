@@ -59,7 +59,8 @@ html, body {
  }
  
  #social img{
- max-width: 50%;
+  width:50%;
+ max-width: 50px;
 
  }
  
