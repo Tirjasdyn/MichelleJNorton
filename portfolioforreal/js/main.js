@@ -11,7 +11,9 @@ watcher.lock();
 
 watcher.stateChange(function() {
   $(menu).toggleClass('scrolled', this.isAboveViewport)
+  $(menu).fadeIn(500);
 });
 
 
 });
+
