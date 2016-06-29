@@ -22,6 +22,11 @@ html, body {
 	
 }
 
+body {
+  background-color: #9F3548;
+  
+}
+
 #header {
   height: 500px; 
   width: 100%; 
@@ -106,31 +111,14 @@ nav {
   padding-top: 10px;
 }
 
-.main {
-	width: 80%;
-	border: 1px solid #033F4E;
-	border-radius: 0.25em;
-	margin: 10px auto;
-	background: #111317;
-	opacity: 0.6;
-    filter: alpha(opacity=60); 
-	color: #D4AC6A;
-	font-family: helvetica, roboto, arial, sans-serif;
-	font-size: 2em;
-  letter-spacing: 0.15em;
-  padding: 10px;
 
-}
 
 /* End Index */
 /* Start portfolio */
-h1 {
-	text-align: center;
-	margin-top: 20px;
-}
+
 
 #portfolio { 
-  background: #F0F0F0 url("../images/mohawk.jpg");
+  background: #9F3548;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -140,8 +128,10 @@ h1 {
   width: 100%; 
   max-width: 1920px; 
   position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
 }
  
 #portfolio article { 
