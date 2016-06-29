@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Michelle J Norton: Writer, Web Designer, and Painter of Things</title>
+		<meta charset="UTF-8" />
+		<META NAME="description" CONTENT="Michelle J Norton: Writer, Web Designer, and Painter of Things. This is my portfolio.">
+		<meta name="keywords" content="HTML,CSS,JavaScript,JQuery,Responsive,Mobile,Parallax">
+		<META HTTP-EQUIV="Window-target" CONTENT="_top">
+		<META NAME="Author" CONTENT="Michelle J Norton">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<META HTTP-EQUIV="Window-target" CONTENT="_top">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+		<script src="js/skrollr.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script>
+		$(document).ready(function(){
+			skrollr.init();// start Scroll animations
+			
+			
+			//scroll effects for navbar
+			var menu = $('nav#menu');
+
+			var watcher = scrollMonitor.create( menu );
+
+			watcher.lock();
+
+			watcher.stateChange(function() {
+			$(menu).toggleClass('scrolled', this.isAboveViewport)
+			});
+			
+			//Overlay code
+			  $("img[rel]").overlay({
+				color: '#ccc',
+				top: 50
+				});
+		}); // end jquery
+		</script>
+		
+	</head>
+	<body>
+	<!--Header-->
+		<header id="header" data-type="background" data-speed="10" class="pages">
+		<div id="social"><a href="https://twitter.com/MichelleJNorton"><img src="images/twitter.png" alt="Twitter"/></a><a href="https://www.linkedin.com/in/michellejnorton"><img src="images/in.png" alt="LinkedIn"/></a><a href="https://instagram.com/tirjasdyn/"><img src="images/instagram.png" alt="Instagram"/></a><a href="https://www.pinterest.com/tirjasdyn/"><img src="images/pinterest.png" alt="Pinterest"/></a><a href="https://plus.google.com/u/0/+MichelleNorton/posts"><img src="images/gplus.png" alt="Google +"/></a><a href="https://www.tumblr.com/blog/tirjasdyn"><img src="images/tumblr.png" alt="Tumblr"/></a><a href="https://www.youtube.com/channel/UCfBWlkN8w7dNUCL5JikCAHg"><img src="images/youtube.png" alt="YouTube"/></a></div>
+			<article>
+			<h1>Michelle J Norton
+			<p id="tag">Runs with Code</p>
+			</h1>
+						
+		<nav id="menu">
+			<a href="#top" class="button" onclick="$('html, body').animate({scrollTop: '0px'}, 100);">Home</a> | <a href="#portfolio" class="button" onclick="$('html, body').animate({scrollTop: $('#portfolio').offset().top }, 1000);">Web Design</a> | <a href="#portfolio" class="button" onclick="$('html, body').animate({scrollTop: $('#portfolio').offset().top }, 1000);">Graphic Design</a> | <a href="#portfolio" class="button" onclick="$('html, body').animate({scrollTop: $('#portfolio').offset().top }, 1000);">Writing</a>  | <a href="#resume" class="button" onclick="$('html, body').animate({scrollTop: $('#resume').offset().top }, 1000);">Resume</a> | <a href="http://michellejnorton.com/blog/" class="button" onclick="$('html, body').animate({scrollTop: $('#contact').offset().top }, 1000);">Blog</a> | <a href="#contact" class="button" onclick="$('html, body').animate({scrollTop: $('#contact').offset().top }, 1000);">Contact</a> 
+		</nav>
+			<section class="main"  data-center="opacity: 0.6"
+                data-106-top="opacity: 0">
+			<p>Hello! I design web sites, setup Wordpress installations, make templates, and mobile apps. I use HTML5, CSS3, Javascript, jQuery, and responsive design. What to know more? Click on one of the links above. </p>
+			</section>
+			</article>
+		</header>		
+				<section id="portfolio" data-type="background" data-speed="10" class="pages">
+		
+		<div id="about">
+			<h3>Portfolio</h3>
+			<p>
+				I've created dozens of websites. I started in 1995 when my boss at the time came running into the lab and insisted we have an intranet. Our little intranet expanded to the web and I've been creating websites ever since.  
+			</p>
+			
+		</div>
+		
+		<div class="port-parent">
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/cannedairv2t.png" rel="#1"/>
+			</a>
+				
+				</div>
+				</div>
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/orcsportst.png" rel="#2"/>
+			</a>
+			
+				</div>
+				</div>
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/otherstuffv2t.png" rel="#3"/>
+			</a>
+			
+				</div>
+				</div>
+				
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/mobilecant.png" rel="#4"/>
+			</a>
+			
+				</div>
+				</div>
+				
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/notet.png" rel="#5"/>
+			</a>
+			
+				</div>
+				</div>
+				
+		</div>
+		
+		<!-- Overlays -->
+		<div class="simple_overlay" id="1">
+		<img src="images/portfolio/cannedairv2.png" title="Canned Air V2" />
+		<div class="details">
+		<h3>Canned Air v2</h3>
+		<h4>Class Project</h4>
+		<p>Responsive website with a text base CSS logo. Logo is made entirely with CSS and text. No images. Font embeded, CSS3, HTML5.</p>
+		</div>
+		</div>
+		
+		<div class="simple_overlay" id="2">
+		<img src="images/portfolio/orcsports.jpg" title="Orc Sports" />
+		<div class="details">
+		<h3>Orc Sports</h3>
+		<h4>Game Website</h4>
+		<p>Layered backgrounds. Image on gradient on color. Custom logo and matching buttons. Buttons have hover bounce effect. Content screen is transparent.</p>
+		</div>
+		</div>
+		
+		<div class="simple_overlay" id="3">
+		<img src="images/portfolio/otherstuffv2.png" title="Parallax" />
+		<div class="details">
+		<h3>Other Stuff v2</h3>
+		<h4>Class Project</h4>
+		<p>Parallax website with scrolling effects over fixed image. Website scrolls over image of a quilt, alternating opaque white background with red and gray transparent backgrounds.</p>
+		</div>
+		</div>
+		
+		
+		<div class="simple_overlay" id="4">
+		<img src="images/portfolio/cannedairm.png" title="Parallax" />
+		<div class="details">
+		<h3>Canned Air v1</h3>
+		<h4>Class Project</h4>
+		<p>Responsive website with tablet and phone layouts</p>
+		</div>
+		</div>
+		
+		<div class="simple_overlay" id="5">
+		<img src="images/portfolio/claimhelper.png" title="Parallax" />
+		<div class="details">
+		<h3>Claim Helper</h3>
+		<h4>Note Taking App</h4>
+		<p>HTML and JavaScript. Form is filled out and populates formatted notes which can be printed or copied to clipboard. Extra options shown when certain items are select. Deleting any content will remove field from notes.</p>
+		</div>
+		</div>
+
+		</section>
+		
+		
+
+				<section id="contact" data-type="background" data-speed="10" class="pages">
+				<article>
+				
+    <h1>Need a Website?</h1>
+   <h3 class="tel"><a href="tel:+13038476204">303.847.6204</a></h3>	
+			<div id="social2"><a href="https://twitter.com/MichelleJNorton"><img src="images/twitter.png" alt="Twitter"/></a><a href="https://www.linkedin.com/in/michellejnorton"><img src="images/in.png" alt="LinkedIn"/></a><a href="https://instagram.com/tirjasdyn/"><img src="images/instagram.png" alt="Instagram"/></a><a href="https://www.pinterest.com/tirjasdyn/"><img src="images/pinterest.png" alt="Pinterest"/></a><a href="https://plus.google.com/u/0/+MichelleNorton/posts"><img src="images/gplus.png" alt="Google +"/></a><a href="https://www.tumblr.com/blog/tirjasdyn"><img src="images/tumblr.png" alt="Tumblr"/></a><a href="https://www.youtube.com/channel/UCfBWlkN8w7dNUCL5JikCAHg"><img src="images/youtube.png" alt="YouTube"/></a></div>	
+				</article>
+		</section>
+
+				<section id="portfolio" data-type="background" data-speed="10" class="pages">
+		
+		<div id="about">
+			<h3>Portfolio</h3>
+			<p>
+				I've created dozens of websites. I started in 1995 when my boss at the time came running into the lab and insisted we have an intranet. Our little intranet expanded to the web and I've been creating websites ever since.  
+			</p>
+			
+		</div>
+		
+		<div class="port-parent">
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/cannedairv2t.png" rel="#1"/>
+			</a>
+				
+				</div>
+				</div>
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/orcsportst.png" rel="#2"/>
+			</a>
+			
+				</div>
+				</div>
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/otherstuffv2t.png" rel="#3"/>
+			</a>
+			
+				</div>
+				</div>
+				
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/mobilecant.png" rel="#4"/>
+			</a>
+			
+				</div>
+				</div>
+				
+			<div class="box">
+				<div class="inbox">
+				<img src="images/portfolio/thumb/notet.png" rel="#5"/>
+			</a>
+			
+				</div>
+				</div>
+				
+		</div>
+		
+		<!-- Overlays -->
+		<div class="simple_overlay" id="1">
+		<img src="images/portfolio/cannedairv2.png" title="Canned Air V2" />
+		<div class="details">
+		<h3>Canned Air v2</h3>
+		<h4>Class Project</h4>
+		<p>Responsive website with a text base CSS logo. Logo is made entirely with CSS and text. No images. Font embeded, CSS3, HTML5.</p>
+		</div>
+		</div>
+		
+		<div class="simple_overlay" id="2">
+		<img src="images/portfolio/orcsports.jpg" title="Orc Sports" />
+		<div class="details">
+		<h3>Orc Sports</h3>
+		<h4>Game Website</h4>
+		<p>Layered backgrounds. Image on gradient on color. Custom logo and matching buttons. Buttons have hover bounce effect. Content screen is transparent.</p>
+		</div>
+		</div>
+		
+		<div class="simple_overlay" id="3">
+		<img src="images/portfolio/otherstuffv2.png" title="Parallax" />
+		<div class="details">
+		<h3>Other Stuff v2</h3>
+		<h4>Class Project</h4>
+		<p>Parallax website with scrolling effects over fixed image. Website scrolls over image of a quilt, alternating opaque white background with red and gray transparent backgrounds.</p>
+		</div>
+		</div>
+		
+		
+		<div class="simple_overlay" id="4">
+		<img src="images/portfolio/cannedairm.png" title="Parallax" />
+		<div class="details">
+		<h3>Canned Air v1</h3>
+		<h4>Class Project</h4>
+		<p>Responsive website with tablet and phone layouts</p>
+		</div>
+		</div>
+		
+		<div class="simple_overlay" id="5">
+		<img src="images/portfolio/claimhelper.png" title="Parallax" />
+		<div class="details">
+		<h3>Claim Helper</h3>
+		<h4>Note Taking App</h4>
+		<p>HTML and JavaScript. Form is filled out and populates formatted notes which can be printed or copied to clipboard. Extra options shown when certain items are select. Deleting any content will remove field from notes.</p>
+		</div>
+		</div>
+
+		</section>
+		
+		
+
+		<section id="resume" data-type="background" data-speed="10" class="pages">
+	
+		
+		<h1>Resume</h1><a href="images/michellenortonresume.pdf" class="button">Download Resume</a>
+	<article>	
+		
+
+
+<h4>EXPERIENCE</h4><section id="sked">
+<h4>SKILLS</h4>
+<ul>
+<li>HTML5, CSS3, SEO, CMS, Wordpress, Social Media</li>
+<li>JavaScript, JQuery, PHP, MySQL, SQL Server
+<li>Responsive Design, Mobile Design</li>
+<li>Adobe: PhotoShop, Illustrator, InDesign, Dreamweaver
+<li>MS Office: Word, Excel, Access, OneNote, Publisher
+</ul>
+<h4>EDUCATION</h4>
+<ul>
+<li>Web Design & Development 2015 - DeVry University</li>
+<li>English - Creative Writing August 2002 - Colorado State University</li>
+</ul>
+</section>
+
+<h5>Customer Service Rep - PL Claims</h5>
+<p>Safeco 2014 - Present<br />
+In bound calls for personal claims, auto and property. In house app development - Claim Helper - note taking web app, utilizing JavaScript & JQuery.
+
+<h5>Sales Agent / Retention Plan Specialist / Chat Agent</h5>
+<p>Connextions 2012, 2013 - 2014<br />
+In bound call center sales for United Health Care Medicare & Kaiser Permanente. Retenion Sales for Kaiser Permanente. Chat Customer Sales Service for Kaiser Permanente.
+
+<h5>TSR - Dispatch</h5>
+<p>Manpower for IBM 2013<br />
+Nationwide dispatch for service techs to IBM sever customers.
+
+<h5>Heath Outreach Specialist</h5>
+<p>Apple One for Wellpoint 2012<br />
+Out bound call center enrollment for health insurance wellness programs.
+
+<h5>Customer Care Representative</h5>
+<p>Alpine Access 2011<br />
+In bound call center for billing and technical support for XBOX 360.
+
+<h5>Web Designer</h5>
+<p>Robert E. Loup Jewish Community Center February 2008 - January 2010<br />
+Web design & maintenance for jccdenger.org & macc.org. Eblasts, microsite development, community calendars, event sites, logo design, movie trailer editing.
+
+<h5>Web Designer / Receptionist</h5>
+<p>JB Olsen Construction November 2006 - January 2008<br />
+Redesign of jbolsen.org. WordPress support and maintenance. Design of magazine ads, sell sheets, project books. 16 line phone reception.
+
+
+
+
+
+		</article>
+		
+<section id="e"></section>	
+</section>
+		
+			<footer id="footer" data-type="background" data-speed="10" class="pages">
+		<article>Copyright MJN</article>
+		</footer>
+	</body>
+</html>
