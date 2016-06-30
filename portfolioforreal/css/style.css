@@ -4,6 +4,8 @@
 	url(../fonts/Civi_Regular.ttf);
 	
 }
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
 header, section, article, footer {
 display: block;
 margin: 0;
@@ -14,7 +16,7 @@ padding:0;
 
 html, body {
 	color: #803D15;
-	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+	font-family: 'Karla', sans-serif;
 	font-size: 100%;
 	height: 100%;
    margin:0;
@@ -23,7 +25,7 @@ html, body {
 }
 
 body {
-  background-color: #9F3548;
+  background-color: #748BA7;
   
 }
 
@@ -79,7 +81,7 @@ nav {
   border-width: 1px;
   color: #111;
   display: inline-block;
-  font-family: helvetica, roboto, arial, sans-serif;
+  font-family: 'Karla', sans-serif;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   padding: 1em 1.5em;
@@ -118,20 +120,15 @@ nav {
 
 
 #portfolio { 
-  background: #9F3548;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
+
   min-height: 25%; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
   position: relative; 
+  padding: 75px 0 0 85px;
 
-  transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+ 
 }
  
 #portfolio article { 
@@ -146,10 +143,10 @@ nav {
 #about {
 	float:left;
 	min-width: 200px;
-	width: 50%;
-	font-family: helvetica, roboto, arial, sans-serif;
-	font-size: 2em;
-	margin: 10px;
+	width: 25%;
+	font-family: 'Karla', sans-serif;
+	font-size: 1em;
+	margin: 40px;
 	
 	padding: 5px;
 	margin-top: 50px;
